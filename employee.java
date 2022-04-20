@@ -36,3 +36,36 @@ for(int i=0;i<n;i++)
 System.out.println(" enter "+i+"employee details \n");
 System.out.println("enter employe id(integer):\n");
 eid=sc_emp.nextInt();
+System.out.println("Enter employee name(String):\n");
+String name=sc_emp.next();
+ename=new String(name);
+System.out.println("enter employee salary(integer):\n");
+esal=sc_emp.nextInt();
+employee1 emp=new employee1(eid,esal,ename);
+employees[i]=emp;
+}
+System.out.println("Employees are:\n");
+for(employee1 y:employees) 
+y.showData();
+System.out.println("enter employee no to search:\n");
+int semp=sc.nextInt();
+boolean found=false;
+for(employe1 e:employees) 
+{
+if(semp==e.eno) 
+{
+found=true;
+System.out.println("Employee found");
+e.showData();
+break;
+}
+}
+if(!found) 
+{
+System.out.println("Employee not found");
+}}}
+
+
+
+
+
