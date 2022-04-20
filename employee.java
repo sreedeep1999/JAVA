@@ -16,7 +16,7 @@ public employee1(int no,int sal,String name)
 public void showData()
 {
 	System.out.println("EMPID="+eno);
-	System.out.println("NAME=")+ename);
+	System.out.println("NAME="+ename);
 	System.out.println("SALARY="+esalary);
 }}
 public class employee
@@ -63,7 +63,9 @@ break;
 if(!found) 
 {
 System.out.println("Employee not found");
-}}}
+}
+}
+}
 
 
 
