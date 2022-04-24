@@ -2,22 +2,22 @@ import java.util.Scanner;
 import java.util.Arrays;
 class employee1
 {
-	int eno,esalary;
-	String ename;
-	public employee1()
-	{
-	}
+  int eno,esalary;
+  String ename;
+  public employee1()
+  {
+  }
 public employee1(int no,int sal,String name)
 {
-	eno=no;
-	esalary=sal;
-	ename=name;
+  eno=no;
+  esalary=sal;
+  ename=name;
 }
 public void showData()
 {
-	System.out.println("EMPID="+eno);
-	System.out.println("NAME="+ename);
-	System.out.println("SALARY="+esalary);
+  System.out.println("EMPID="+eno);
+  System.out.println("NAME="+ename);
+  System.out.println("SALARY="+esalary);
 }}
 public class employee
 {
@@ -50,7 +50,7 @@ y.showData();
 System.out.println("enter employee no to search:\n");
 int semp=sc.nextInt();
 boolean found=false;
-for(employe1 e:employees) 
+for(employee1 e:employees) 
 {
 if(semp==e.eno) 
 {
@@ -65,9 +65,4 @@ if(!found)
 System.out.println("Employee not found");
 }
 }
-}
-
-
-
-
-
+} 
