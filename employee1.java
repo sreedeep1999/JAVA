@@ -4,7 +4,7 @@ class employee1
 {
 	int eno,esalary;
 	String ename;
-	public employee1() 
+	public employee1
 	{
 	}
 public employee1(int no,int sal,String name)
