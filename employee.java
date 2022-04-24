@@ -19,7 +19,7 @@ public void showData()
 	System.out.println("NAME="+ename);
 	System.out.println("SALARY="+esalary);
 }}
-public class employee
+public class employee() 
 {
 public static void main(String args[])
 {
