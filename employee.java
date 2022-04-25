@@ -34,7 +34,7 @@ String ename;
 for(int i=0;i<n;i++)
 {
 System.out.println(" enter "+i+"employee details \n");
-System.out.println("enter employe id(integer):\n");
+System.out.println("enter employee id(integer):\n");
 eid=sc_emp.nextInt();
 System.out.println("Enter employee name(String):\n");
 String name=sc_emp.next();
