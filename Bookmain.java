@@ -51,7 +51,7 @@ System.out.println("\nPublisher:"+this.publisher.publisher);
 }
 }
 
-class Bookmain
+public class Bookmain
 {
 public static void main (String[]args)
 {
