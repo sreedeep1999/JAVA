@@ -1,4 +1,4 @@
- import java.awt.*;
+  import java.awt.*;
 import java.awt.event.*;
 
 class Calculator extends Frame implements ActionListener
@@ -13,6 +13,7 @@ TextField t2=new TextField();
 TextField t3=new TextField();
 
 Button b1=new Button("Add");
+Button b3=new Button("Substraction");
 Button b5=new Button("Cancel");
 
 Calculator()
@@ -27,6 +28,9 @@ t3.setBounds(200,180,100,20);
 
 b1.setBounds(50,250,50,20);
 b5.setBounds(290,250,50,20);
+b3.setBounds(350,250,50,20);
+
+
 
 b1.setBackground(Color.red);
 
@@ -38,9 +42,11 @@ f1.add(t2);
 f1.add(t3);
 f1.add(b1);
 f1.add(b5);
+f1.add(b3);
 
 b1.addActionListener(this);
 b5.addActionListener(this);
+b3.addActionListener(this);
 
 f1.setLayout(null);
 f1.setVisible(true);
@@ -59,6 +65,11 @@ public void actionPerformed(ActionEvent e)
 if(e.getSource()==b1)
 {
     t3.setText(String.valueOf(n1+n2));
+
+}
+if(e.getSource()==b3)
+{
+    t3.setText(String.valueOf(n1-n2));
 
 }
 
